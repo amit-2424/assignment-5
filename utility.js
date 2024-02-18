@@ -26,7 +26,7 @@ function setDynamicElement(elementText){
     const p2 = document.createElement("p");
     p2.innerText = "Economic";
     const p3 = document.createElement("p");
-    p3.innerText = 5500;
+    p3.innerText = 550;
     
     div.appendChild(p1);
     div.appendChild(p2);
@@ -42,7 +42,7 @@ function grandTotal(coupon){
      const grandTotalFirst = grandTotalInitial * 0.85;
      setElementById("grandTotal",grandTotalFirst);
    }
-    if(coupon == "Cople 20"){
+    if(coupon == "Couple 20"){
      const grandTotalSecond = grandTotalInitial * 0.80;
      setElementById("grandTotal",grandTotalSecond);
     }

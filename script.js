@@ -18,7 +18,7 @@ for (const sit of AllBtn) {
             // count seat
             count = count - 1;
             count2 = count2 + 1;
-            count3 = count3 + 5500;
+            count3 = count3 + 550;
             count4 = count4 + 1;
             setElementById("totalSeat", count);
             setElementById("sitCount", count2);
