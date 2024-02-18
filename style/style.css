@@ -1,0 +1,48 @@
+
+section{
+    margin-bottom: 30px;
+}
+
+
+
+/* hero section */
+section#hero-section {
+    background-image: url(../Images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-container h1 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-container p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.seat-all div{
+     width:100%;
+     background-color: #e6e6e7;
+     padding: 10px 20px;
+     text-align: center;
+     border-radius: 5px;
+     cursor: pointer;
+}
