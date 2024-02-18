@@ -18,7 +18,7 @@ let count4 = 0;
             setElementById("totalPrice",count3);
 
             // update grand Total
-            grandTotal("NEW15");
+            
     
             // add element
             const elementText = event.target.innerText;
@@ -32,3 +32,16 @@ let count4 = 0;
 
         })
     }
+
+
+
+    const couponBtn = document.getElementById("couponBtn");
+
+     couponBtn.addEventListener("click",function(event){
+        const couponInput = document.getElementById("couponInput").value;
+         if(couponInput === "NEW15"){
+            grandTotal(couponInput);
+         }else if(couponInput === "Couple 20"){
+            grandTotal(couponInput);
+         }
+     });
