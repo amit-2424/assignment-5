@@ -46,6 +46,8 @@ function grandTotal(coupon){
      const grandTotalSecond = grandTotalInitial * 0.80;
      setElementById("grandTotal",grandTotalSecond);
     }
+      
+    
 }
 
 

@@ -46,15 +46,20 @@ for (const sit of AllBtn) {
 // Grand total update
 
 const couponBtn = document.getElementById("couponBtn");
-
 couponBtn.addEventListener("click", function (event) {
-    const couponInput = document.getElementById("couponInput").value;
-    if (couponInput === "NEW15") {
-        grandTotal(couponInput);
-        event.target.parentNode.remove(event.target);
-    } else if (couponInput === "Couple 20") {
-        grandTotal(couponInput);
-        event.target.parentNode.remove(event.target);
+    if (count2 == 4) {
+        const couponInput = document.getElementById("couponInput").value;
+        if (couponInput === "NEW15") {
+            grandTotal(couponInput);
+            event.target.parentNode.remove(event.target);
+        } else if (couponInput === "Couple 20") {
+            grandTotal(couponInput);
+            event.target.parentNode.remove(event.target);
+        }else{
+            alert("coupon invalid");
+        }
+    }else{
+        alert("place purchased 4 seat and input valid coupon");
     }
 });
 
@@ -69,9 +74,9 @@ successBtn.addEventListener("click", function () {
 
     if (count4 == 0) {
         alert("you cannot select seat");
-    }else if(isNaN(phoneNum)){
+    } else if (isNaN(phoneNum)) {
         alert("please Enter your Number");
-    }else if(phoneNum < 0){
+    } else if (phoneNum < 0) {
         alert("give this positive number");
     }
 
