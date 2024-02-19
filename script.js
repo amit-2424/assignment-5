@@ -69,7 +69,7 @@ successBtn.addEventListener("click", function () {
 
     if (count4 == 0) {
         alert("you cannot select seat");
-    }else if(phoneNum == NaN){
+    }else if(isNaN(phoneNum)){
         alert("please Enter your Number");
     }else if(phoneNum < 0){
         alert("give this positive number");
