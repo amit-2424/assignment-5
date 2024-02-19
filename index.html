@@ -54,7 +54,7 @@
             </div>
         </nav>
     </header>
-    <main class="lg:w-8/12 m-auto">
+    <main id="mainContent" class="lg:w-8/12 m-auto">
         <section id="hero-section">
             <div class="hero-container">
                 <h1 class="text-center lg:text-6xl text-2xl">End-to-End Travel with <br> <span class="text-green-400">P
@@ -91,7 +91,7 @@
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="flex flex-col justify-center font-bold items-center w-3/12 p-2">
-                            <h2 class="lg:text-2xl text-xl text-center">Couple 20</h2>
+                            <h2 class="lg:text-xl text-sm text-center">Couple 20</h2>
                             <p class="lg:text-sm text-xs  text-center">coupon code</p>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                                 <div class="label">
                                     <span class="label-text text-sm font-bold">Phone number*</span>
                                 </div>
-                                <input type="number" placeholder="Enter your number"
+                                <input id="phoneNum" type="number" placeholder="Enter your number"
                                     class="input input-bordered w-full" />
                             </label>
                             <label class="form-control w-full mt-8">
@@ -262,7 +262,7 @@
                                 <input type="email" placeholder="Your Email"
                                     class="input input-bordered w-full" />
                             </label>
-                            <button id="successBtn" class="btn btn-success w-full mt-12">Success</button>
+                            <button id="successBtnFinal" class="btn btn-active btn-accent w-full mt-10">Success</button>
                             <div class="flex px-14 py-4 mt-6 justify-between items-center w-full">
                                 <span class="underline text-sm font-light">Terms and Conditions</span>
                                 <span class="underline text-sm font-lite">Cancellation Policy</span>
@@ -273,8 +273,12 @@
             </div>
         </section>
     </main>
+
+    <section id="popUP">
+        
+    </section>
     
-    <footer class=" lg:w-8/12 m-auto bg-black">
+    <footer id="footer" class=" lg:w-8/12 m-auto bg-black">
     
             <div class="footer p-10 text-base-content lg:max-w-5xl m-auto flex flex-col lg:flex-row justify-between items-c">
                 <nav>

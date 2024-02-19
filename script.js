@@ -11,8 +11,8 @@ let count4 = 0;
 for (const sit of AllBtn) {
     sit.addEventListener("click", function (event) {
         // alert massage
-        if(count4 == 4){
-            alert("You parched max number seat");
+        if (count4 == 4) {
+            alert("You parched maximum number seat");
         }
         if (count4 < 4) {
             // count seat
@@ -57,3 +57,31 @@ couponBtn.addEventListener("click", function (event) {
         event.target.parentNode.remove(event.target);
     }
 });
+
+
+// successBtn
+
+const successBtn = document.getElementById("successBtnFinal");
+
+successBtn.addEventListener("click", function () {
+
+    const phoneNum = parseInt(document.getElementById("phoneNum").value);
+
+    if (count4 == 0) {
+        alert("you cannot select seat");
+    }else if(phoneNum === NaN){
+        alert("please Enter your Number");
+    }else if(phoneNum < 0){
+        alert("give this positive number");
+    }
+
+    if (phoneNum >= 0 && count4 > 0) {
+        const mainContent = document.getElementById("mainContent");
+        const footer = document.getElementById("footer");
+
+        mainContent.classList.add("hidden");
+        footer.classList.add("hidden");
+    }
+
+
+})
