@@ -108,7 +108,8 @@
                 </div>
                 <div>
                     <div class="flex bg-white text-center w-full gap-5 lg:rounded-2xl lg:flex-row flex-col">
-                        <div class="lg:w-7/12 w-full flex flex-col  lg:items-start items-center lg:pl-10 p-2 justify-center">
+                        <div
+                            class="lg:w-7/12 w-full flex flex-col  lg:items-start items-center lg:pl-10 p-2 justify-center">
                             <div class="flex justify-between w-full">
                                 <div class="flex gap-2">
                                     <div> <img src="images/bus-logo.png" alt=""></div>
@@ -217,8 +218,8 @@
                     </div>
                     <div>
                         <div class="flex justify-between items-center py-4 border-b-2 border-dotted border-white">
-                            <h1 class="text-sm font-medium">seat <span
-                                  id="sitCount"  class="px-2 rounded bg-blue-800 text-white">0</span></h1>
+                            <h1 class="text-sm font-medium">seat <span id="sitCount"
+                                    class="px-2 rounded bg-blue-800 text-white">0</span></h1>
                             <h1 class="text-sm font-medium">class</h1>
                             <h1 class="text-sm font-medium">price</h1>
                         </div>
@@ -231,8 +232,8 @@
                         </div>
                         <div class="text-center">
                             <input id="couponInput" class="p-4 m-auto rounded-l-xl w-8/12" type="text"
-                                placeholder="Have any couppon"><button
-                               id="couponBtn" class="btn-primary bg-green-500 p-4 m-auto rounded-r-xl w-4/12">Apply</button>
+                                placeholder="Have any couppon"><button id="couponBtn"
+                                class="btn-primary bg-green-500 p-4 m-auto rounded-r-xl w-4/12">Apply</button>
                         </div>
                         <div class="flex justify-between items-center py-4">
                             <p class="text-xl font-medium">Grand Total</p>
@@ -245,8 +246,7 @@
                                 <div class="label">
                                     <span class="label-text text-sm font-bold">Pessenger name*</span>
                                 </div>
-                                <input type="text" placeholder="Your name"
-                                    class="input input-bordered w-full" />
+                                <input type="text" placeholder="Your name" class="input input-bordered w-full" />
                             </label>
                             <label class="form-control w-full mt-8">
                                 <div class="label">
@@ -259,8 +259,7 @@
                                 <div class="label">
                                     <span class="label-text text-sm font-bold">Your Email*</span>
                                 </div>
-                                <input type="email" placeholder="Your Email"
-                                    class="input input-bordered w-full" />
+                                <input type="email" placeholder="Your Email" class="input input-bordered w-full" />
                             </label>
                             <button id="successBtnFinal" class="btn btn-active btn-accent w-full mt-10">Success</button>
                             <div class="flex px-14 py-4 mt-6 justify-between items-center w-full">
@@ -274,49 +273,58 @@
         </section>
     </main>
 
-    <section id="popUP">
-        
+    <section id="popUP" class="popSuccess bg-green-300 flex justify-center items-center hidden">
+        <div class="flex flex-col w-6/12 p-10 bg-white rounded-xl gap-5 justify-center items-center">
+            <img width="100px" src="images/success.png" alt="">
+            <h1 class="text-green-500 text-2xl">SUCCESS</h1>
+            <p class="w-8/12 m-auto">Thank you for Booking Our Bus Seats.
+                We are working hard to find the best service and deals for you.
+                Shortly you will find a confirmation in your email.</p>
+
+            <button class="px-6 py-4 rounded-2xl bg-green-500 text-white text-xl">Continue</button>
+        </div>
     </section>
-    
+
     <footer id="footer" class=" lg:w-8/12 m-auto bg-black">
-    
-            <div class="footer p-10 text-base-content lg:max-w-5xl m-auto flex flex-col lg:flex-row justify-between items-c">
-                <nav>
-                    <header class="footer-title text-xl font-bold text-white">Get In Touch</header>
-                    <p class="text-white font-light mb-2">Dit amet consectetur. Condimentum adipiscing <br> aliquam turpis
-                        placerat dolor. Purus urna <br> in sit nullam proin.</p>
-                    <span class="text-white font-light mb-2"><i
-                            class="fa-solid fa-envelope text-orange-400 mr-2"></i>hockeys@support.com</span>
-                    <span class="text-white font-light"><i class="fa-solid fa-phone text-orange-400 mr-2"></i>(+62)
-                        123-321-543</span>
+
+        <div
+            class="footer p-10 text-base-content lg:max-w-5xl m-auto flex flex-col lg:flex-row justify-between items-c">
+            <nav>
+                <header class="footer-title text-xl font-bold text-white">Get In Touch</header>
+                <p class="text-white font-light mb-2">Dit amet consectetur. Condimentum adipiscing <br> aliquam turpis
+                    placerat dolor. Purus urna <br> in sit nullam proin.</p>
+                <span class="text-white font-light mb-2"><i
+                        class="fa-solid fa-envelope text-orange-400 mr-2"></i>hockeys@support.com</span>
+                <span class="text-white font-light"><i class="fa-solid fa-phone text-orange-400 mr-2"></i>(+62)
+                    123-321-543</span>
+            </nav>
+            <div class="flex justify-between fa-align-center gap-12 mt-0 pt-0">
+                <nav class="flex flex-col justify-between fa-align-center gap-2">
+                    <header class="footer-title text-white">Company</header>
+                    <a class="link link-hover text-white">About us</a>
+                    <a class="link link-hover text-white">Leadership</a>
+                    <a class="link link-hover text-white">Careers</a>
+                    <a class="link link-hover text-white">News & Article</a>
+                    <a class="link link-hover text-white">Legal Notice</a>
                 </nav>
-                <div class="flex justify-between fa-align-center gap-12 mt-0 pt-0">
-                    <nav class="flex flex-col justify-between fa-align-center gap-2">
-                        <header class="footer-title text-white">Company</header>
-                        <a class="link link-hover text-white">About us</a>
-                        <a class="link link-hover text-white">Leadership</a>
-                        <a class="link link-hover text-white">Careers</a>
-                        <a class="link link-hover text-white">News & Article</a>
-                        <a class="link link-hover text-white">Legal Notice</a>
-                    </nav>
-                    <nav class="flex flex-col justify-between fa-align-center gap-2">
-                        <header class="footer-title text-white">Support</header>
-                        <a class="link link-hover text-white">Help Center</a>
-                        <a class="link link-hover text-white">FAQ</a>
-                        <a class="link link-hover text-white">Ticket Support</a>
-                        <a class="link link-hover text-white">Contact Us</a>
-                    </nav>
-                </div>
-                <nav>
-                    <header class="footer-title text-white">Services</header>
-                    <a class="link link-hover text-white">Academy</a>
-                    <a class="link link-hover text-white">Group Lesson</a>
-                    <a class="link link-hover text-white">Private Lesson</a>
-                    <a class="link link-hover text-white">Hockeys for kids</a>
-                    <a class="link link-hover text-white">Hockeys for Adult</a>
+                <nav class="flex flex-col justify-between fa-align-center gap-2">
+                    <header class="footer-title text-white">Support</header>
+                    <a class="link link-hover text-white">Help Center</a>
+                    <a class="link link-hover text-white">FAQ</a>
+                    <a class="link link-hover text-white">Ticket Support</a>
+                    <a class="link link-hover text-white">Contact Us</a>
                 </nav>
             </div>
-        
+            <nav>
+                <header class="footer-title text-white">Services</header>
+                <a class="link link-hover text-white">Academy</a>
+                <a class="link link-hover text-white">Group Lesson</a>
+                <a class="link link-hover text-white">Private Lesson</a>
+                <a class="link link-hover text-white">Hockeys for kids</a>
+                <a class="link link-hover text-white">Hockeys for Adult</a>
+            </nav>
+        </div>
+
     </footer>
 
 

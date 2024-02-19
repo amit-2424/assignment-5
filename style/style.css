@@ -49,11 +49,6 @@ section#hero-section {
 
 
 
-
-
-
-
-
 /* dynamic element */
 
 .dynamic-element div{
@@ -66,4 +61,12 @@ section#hero-section {
 .dynamic-element p{
     font-size: 1rem;
     font-weight: 500;
+}
+
+
+
+
+/* popup section */
+.popSuccess{
+    height: 100vh;
 }

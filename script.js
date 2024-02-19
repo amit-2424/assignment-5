@@ -78,9 +78,11 @@ successBtn.addEventListener("click", function () {
     if (phoneNum >= 0 && count4 > 0) {
         const mainContent = document.getElementById("mainContent");
         const footer = document.getElementById("footer");
+        const popUP = document.getElementById("popUP");
 
         mainContent.classList.add("hidden");
         footer.classList.add("hidden");
+        popUP.classList.remove("hidden");
     }
 
 
