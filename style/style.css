@@ -7,7 +7,7 @@ section{
 
 /* hero section */
 section#hero-section {
-    background-image: url(../Images/banner.png);
+    background-image: url(../images/banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
